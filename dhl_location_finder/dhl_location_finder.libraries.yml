@@ -1,0 +1,5 @@
+app-styling:
+  version: VERSION
+  css:
+    base:
+      css/custom.css: {}

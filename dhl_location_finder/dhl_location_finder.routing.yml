@@ -1,0 +1,17 @@
+dhl.location-finder:
+  path: '/admin/app/location-finder'
+  defaults:
+    _title: 'Find the location'
+    _form: 'Drupal\dhl_location_finder\Form\LocationFinder'
+  requirements:
+    _permission: 'access content'
+  options:
+    no_cache: "TRUE"
+
+dhl.location-results:
+  path: '/app/location-results/{country_code}/{location}/{postal_code}'
+  defaults:
+    _controller: '\Drupal\dhl_location_finder\Controller\LocationFinderController::locationResults'
+    _title: 'DHL Location Results'
+  requirements:
+    _permission: 'access content'    
