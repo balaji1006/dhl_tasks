@@ -1,9 +1,0 @@
-dhl.location-finder:
-  path: '/admin/app/location-finder'
-  defaults:
-    _title: 'Find the location'
-    _form: 'Drupal\dhl_location_finder\Form\LocationFinder'
-  requirements:
-    _permission: 'access content'
-  options:
-    no_cache: "TRUE"
